@@ -74,13 +74,49 @@ def get_most_watched_genre(user_data):
 # -----------------------------------------
 # ------------- WAVE 3 --------------------
 # -----------------------------------------
+def get_unique_watched(user_data):
+    friend_watched = []
 
+    for friend in user_data["friends"]:
+        for movie in friend["watched"]:
+            friend_watched.append(movie)
+
+    my_unique_watched = []
+
+    for movie in user_data["watched"]:
+        if movie not in friend_watched:
+            my_unique_watched.append(movie)
+
+    return my_unique_watched
+
+def get_friends_unique_watched(user_data):
+    friend_watched = []
+    
+    for friend in user_data["friends"]:
+        for movie in friend["watched"]:
+            friend_watched.append(movie)
+
+    my_watched = user_data["watched"]
+    friend_unique_watched = []
+
+    for movie in friend_watched:
+        if movie not in my_watched and movie not in friend_unique_watched:
+            friend_unique_watched.append(movie)
+
+    return friend_unique_watched
         
 # -----------------------------------------
 # ------------- WAVE 4 --------------------
 # -----------------------------------------
+# recomended movies that in user subscription and user has not watched
+def get_available_recs(user_data):
+    friends_unique_watched = get_friends_unique_watched(user_data)
+    available_recs = []
+    user_subscription = user_data["subscriptions"]
 
-# -----------------------------------------
-# ------------- WAVE 5 --------------------
-# -----------------------------------------
+    # get movies in friends_unique_watched is that user have service subscription
+    for movie in friends_unique_watched:
+        if movie["host"] in user_subscription:
+            available_recs.append(movie)
 
+    return available_recs
