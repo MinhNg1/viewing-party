@@ -1,25 +1,30 @@
 # Coworking Agreement
+- We will work together via VS Code live share: one navigator one driver and come up with solutions as we work through each wave. 
 
-Talk through each section with your partner. Add notes on what you discussed and agreed upon in each section. At the bottom, type your names to sign off on your agreement.
+- Wave 1 -2 Monday
+- Wave 3-5 Wednesday 
+- Review Thursday 
 
 ## Accessibility Needs
-*What does each team member need access to in order to succeed and show up the best they can?*
+- Slack/Zoom
+- VS Code live Share
 
 ## Collaboration vs. Individual Work Expectations
-*Clarify your collaboration expectations - does your group want to write code together all of the time? Or divide work to do independently, then come together to share accomplishments? What tools and technologies can help your collaboration?*
+- Collaboration helps us to find bugs/debug and come up with the solutions faster.
 
 ## Learning Style
-*How does each team member learn best in project settings?*
+- Talking through code and understanding the plan/steps before actually writing out the code.
 
 ## Preferred Feedback Style
-*How does each team member best receive feedback?*
+- Sharing perspective of other team members to help clarify problems and directions.
 
 ## One Team Communication Skill to Improve
-*What is a teamwork-related skill you want to work on?*
+- Discuss more about coding practice skills.
 
 ## Optional: Other agreements
-*Other co-working agreements that were not captured in the above sections.*
+None
 
 ## Signatures
-______________ _______________
-Date: _________
+Minh Nguyễn, Shameka Edwards
+
+Date: 9/17/2026
