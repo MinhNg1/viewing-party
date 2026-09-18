@@ -54,6 +54,21 @@ def test_create_no_rating_movie():
     # Assert
     assert new_movie is None
 
+def test_create_zero_rating_movie():
+    # Arrange
+    movie_title = "Title A"
+    genre = "Horror"
+    rating = 0
+
+    # Act
+    new_movie = create_movie(movie_title, genre, rating)
+
+    # Assert
+    assert new_movie["title"] == movie_title
+    assert new_movie["genre"] == genre
+    assert new_movie["rating"] == rating
+
+
 def test_adds_movie_to_user_watched():
     # Arrange
     movie = {

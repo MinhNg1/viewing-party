@@ -1,7 +1,7 @@
 # ------------- WAVE 1 --------------------
 
 def create_movie(title, genre, rating):
-    if not title or not genre or not rating:
+    if not title or not genre or rating is None or rating < 0:
         return None
 
     return {
