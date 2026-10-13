@@ -13,7 +13,6 @@ def test_new_genre_rec():
     for rec in recommendations:
         assert rec not in sonyas_data["watched"]
 
-    print(f"recommendations: {recommendations}")    
     assert len(recommendations) == 1
     assert FANTASY_4b in recommendations
     assert sonyas_data == clean_wave_5_data()
